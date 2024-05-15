@@ -20,7 +20,7 @@ export default defineConfig({
   //       MEASUREMENTID: JSON.stringify(process.env.MEASUREMENTID),
   //     },
   //   },
-  base: '/psychologists',
+  base: '/psychologists/',
   esbuild: {
     jsxFactory: 'React.createElement',
     jsxInject: `import React from 'react'`,
