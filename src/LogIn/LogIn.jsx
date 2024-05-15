@@ -22,7 +22,6 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { PasswordSvg } from '../Registration/Registration.styled';
-// import { PasswordSvg } from 'Registration/Registration.styled';
 
 const schema = yup.object().shape({
   email: yup.string().email().required(),
