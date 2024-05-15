@@ -64,5 +64,5 @@ export const PasswordDiv = styled.div`
 export const PasswordSvg = styled.svg`
   position: absolute;
   top: 16px;
-  right: 0;
+  right: 16px;
 `;

@@ -70,8 +70,8 @@ const Header = () => {
           </NavLink>
           {isToken && (
             <Namediv>
-              <PeopleMenu width="16" height="16">
-                <use href={`${sprite}#Hamburger`}></use>
+              <PeopleMenu width="40" height="40">
+                <use href={`${sprite}#Vector`}></use>
               </PeopleMenu>
               <NameMenu>{user.name}</NameMenu>
             </Namediv>
@@ -142,7 +142,7 @@ const Header = () => {
           </Buttons>
         ) : (
           <LogoutDiv>
-            <People width="16" height="16">
+            <People width="40" height="40">
               <use href={`${sprite}#Vector`}></use>
             </People>
             <Name>{user.name}</Name>
