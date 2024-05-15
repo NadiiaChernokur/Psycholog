@@ -1,27 +1,33 @@
-import { Route, Routes } from 'react-router-dom';
-import SharedLayout from 'components/SharedLayout/SharedLayout';
-import FirstPage from 'pages/FirstPage/FirstPage';
-import SecondPage from 'pages/SecondPage/SecondPage';
-import HalfPage from 'pages/HalfPage/HalfPage';
-import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import { AppWrapper } from './App.styled';
+import Header from './Header/Header.jsx';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
+import { Loader } from './Loader.jsx';
 
-const test = import.meta.env.VITE_API_TEST;
+const MainPage = lazy(() => import('./MainPage/MainPage.jsx'));
+const PsychologistPage = lazy(() =>
+  import('./PsychologistsList/PsychologistsList.jsx')
+);
+const Favorits = lazy(() => import('./FavoriteList/FavoriteList.jsx'));
+const LogIn = lazy(() => import('./LogIn/LogIn.jsx'));
+const Registration = lazy(() => import('./Registration/Registration.jsx'));
 
-function App() {
-  console.log(test);
+const App = () => {
   return (
-    <AppWrapper>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route path="/first" element={<FirstPage />} />
-          <Route path="/second" element={<SecondPage />}>
-            <Route path=":half" element={<HalfPage />} />
+    <>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Header />}>
+            <Route index element={<MainPage />}></Route>
+            <Route path="/psychologists" element={<PsychologistPage />}></Route>
+            <Route path="/favorite" element={<Favorits />}></Route>
+            <Route path="/login" element={<LogIn />}></Route>
+            <Route path="/registration" element={<Registration />}></Route>
+            <Route path="*" element={<Navigate to="/" />} />
           </Route>
-          <Route path="*" element={<ErrorPage />} />
-        </Route>
-      </Routes>
-    </AppWrapper>
+        </Routes>
+      </Suspense>
+    </>
   );
-}
+};
+
 export default App;
