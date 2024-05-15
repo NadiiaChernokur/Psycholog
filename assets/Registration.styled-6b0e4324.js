@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-export const RegistrationModalBackground = styled.div`
+import{p as o}from"./index-168afcfc.js";const i=o.div`
   position: fixed;
   z-index: 100;
   left: 0;
@@ -9,9 +7,7 @@ export const RegistrationModalBackground = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
-`;
-
-export const RegistrationModalContainer = styled.div`
+`,a=o.div`
   border: 1px solid rgba(239, 237, 232, 0.2);
   border-radius: 30px;
   background: #fbfbfb;
@@ -21,48 +17,38 @@ export const RegistrationModalContainer = styled.div`
   height: 579px;
   padding: 64px;
   position: relative;
-`;
-export const RegistrationLoginH = styled.h3`
+`,r=o.h3`
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #191a15;
   margin-bottom: 20px;
-`;
-export const RegistrationParagraf = styled.p`
+`,n=o.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   color: rgba(25, 26, 21, 0.5);
   margin-bottom: 40px;
   width: 90%;
-`;
-export const RegistrationForm = styled.form`
+`,s=o.form`
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-`;
-
-export const RegistrationInput = styled.input`
+`,e=o.input`
   border: 1px solid rgba(25, 26, 21, 0.1);
   border-radius: 12px;
   padding: 16px 18px;
   width: 100%;
-`;
-export const RegistrationButton = styled.button`
+`,p=o.button`
   border-radius: 30px;
   padding: 16px 189px;
   margin-top: 20px;
-`;
-
-export const PasswordDiv = styled.div`
+`,d=o.div`
   position: relative;
-`;
-
-export const PasswordSvg = styled.svg`
+`,g=o.svg`
   position: absolute;
   top: 16px;
   right: 16px;
-`;
+`;export{g as P,i as R,a,r as b,n as c,s as d,e,d as f,p as g};

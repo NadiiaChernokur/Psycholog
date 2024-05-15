@@ -1,7 +1,4 @@
-import styled from 'styled-components';
-import foto from '../../src/imagemain.jpg';
-import retina from '../../src/image@2x.jpg';
-export const MainPageContainer = styled.main`
+import{p as i,u as d,j as e,s as t}from"./index-168afcfc.js";const o="/psychologists/assets/imagemain-a393557d.jpg",a="/psychologists/assets/image@2x-308b93de.jpg",r=i.main`
   background: linear-gradient(to right, #ebfcf8, rgba(84, 190, 150, 0.2));
   width: 100vw;
   height: 88vh;
@@ -19,8 +16,7 @@ export const MainPageContainer = styled.main`
   @media screen and (max-width: 480px) {
     max-width: 360px;
   }
-`;
-export const LeftContainer = styled.div`
+`,h=i.div`
   width: 50%;
   height: 90%;
   display: flex;
@@ -32,8 +28,7 @@ export const LeftContainer = styled.div`
     width: 100%;
     align-items: center;
   }
-`;
-export const RigchtContainer = styled.div`
+`,c=i.div`
   width: 40%;
   height: 110%;
   position: relative;
@@ -46,18 +41,15 @@ export const RigchtContainer = styled.div`
     width: 384px;
     height: 460px;
   }
-`;
-export const Text = styled.h2`
+`,x=i.h2`
   font-size: clamp(30px, 5vw, 80px);
   line-height: 102%;
   letter-spacing: -0.02em;
   color: #191a15;
-`;
-export const TextSpan = styled.span`
+`,p=i.span`
   font-style: italic;
   color: #54be96;
-`;
-export const Text2 = styled.p`
+`,l=i.p`
   font-size: clamp(8px, 5vw, 18px);
   line-height: 133%;
   letter-spacing: -0.02em;
@@ -69,8 +61,7 @@ export const Text2 = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
-`;
-export const MainButton = styled.button`
+`,g=i.button`
   border-radius: 30px;
   padding: 18px 50px;
   display: flex;
@@ -88,24 +79,21 @@ export const MainButton = styled.button`
     white-space: nowrap;
     font-size: 30px;
   }
-`;
-export const Img = styled.div`
-  background-image: url(${foto});
+`,w=i.div`
+  background-image: url(${o});
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url(${retina});
+    background-image: url(${a});
   }
   @media screen and (max-width: 480px) {
     width: 382px;
     height: 428px;
   }
-`;
-
-export const Blue = styled.div`
+`,m=i.div`
   background-color: #4535af;
   width: 2.5vw;
   height: 2.5vw;
@@ -125,15 +113,11 @@ export const Blue = styled.div`
     width: 10vw;
     height: 10vw;
   }
-`;
-
-export const Question = styled.svg`
+`,f=i.svg`
   rotate: -66deg;
-`;
-export const Users = styled.svg`
+`,u=i.svg`
   rotate: -106deg;
-`;
-export const Orange = styled.div`
+`,b=i.div`
   background-color: #fbc75e;
   width: 2.5vw;
   height: 2.5vw;
@@ -153,9 +137,7 @@ export const Orange = styled.div`
     width: 10vw;
     height: 10vw;
   }
-`;
-
-export const Amount = styled.div`
+`,v=i.div`
   background-color: #54be96;
   box-sizing: border-box;
   width: 311px;
@@ -173,8 +155,7 @@ export const Amount = styled.div`
     top: 84%;
     left: -31%;
   }
-`;
-export const Chek = styled.div`
+`,j=i.div`
   background-color: #fbfbfb;
   width: 54px;
   height: 54px;
@@ -182,18 +163,15 @@ export const Chek = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-export const Experienced = styled.div`
+`,y=i.div`
   white-space: nowrap;
   font-size: clamp(10px, 5vw, 14px);
-`;
-export const ExperiencedPsych = styled.p`
+`,k=i.p`
   font-weight: 400;
   font-size: 14px;
   color: rgba(251, 251, 251, 0.5);
-`;
-export const ExperiencedNamber = styled.p`
+`,z=i.p`
   font-weight: 700;
   font-size: 24px;
   color: #fbfbfb;
-`;
+`,C=()=>{const n=d(),s=()=>{n("/psychologists")};return e.jsxs(r,{children:[e.jsxs(h,{children:[e.jsxs(x,{children:["The road to the ",e.jsx(p,{children:"depths"})," of the human soul"]}),e.jsx(l,{children:"We help you to reveal your potential, overcome challenges and find a guide in your own life with the help of our experienced psychologists."}),e.jsxs(g,{onClick:s,children:[e.jsx("p",{children:" Get started"}),e.jsx("svg",{width:"16",height:"16",children:e.jsx("use",{href:`${t}#Arrow`})})]})]}),e.jsxs(c,{children:[e.jsx(w,{}),e.jsx(m,{children:e.jsx(f,{width:"10",height:"17",children:e.jsx("use",{href:`${t}#question`})})}),e.jsx(b,{children:e.jsx(u,{width:"25",height:"25",children:e.jsx("use",{href:`${t}#mdi_users`})})}),e.jsxs(v,{children:[e.jsx(j,{children:e.jsx("svg",{width:"30",height:"30",children:e.jsx("use",{href:`${t}#fe_check`})})}),e.jsxs(y,{children:[e.jsx(k,{children:"Experienced psychologists"}),e.jsx(z,{children:"15,000"})]})]})]})]})};export{C as default};
